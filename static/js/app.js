@@ -62,8 +62,11 @@ function updateFilters() {
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-    for (i = 0; i < filters.length; i++) {
-      filteredData = filteredData.filter(filters[i]);
+    for (i = 0; i < Object.keys(filters).length; i++) {
+
+      console.log(Object.keys(filters));
+      
+      //filteredData = filteredData.filter()
     }
   
     // 10. Finally, rebuild the table using the filtered data
